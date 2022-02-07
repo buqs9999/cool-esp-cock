@@ -9,7 +9,7 @@ local LegOff = Vector3.new(0,3,0)
 for i,v in pairs(game.Players:GetChildren()) do
     local BoxOutline = Drawing.new("Square")
     BoxOutline.Visible = false
-    BoxOutline.Color = Color3.new(0,0,0)
+    BoxOutline.Color = Color3.new(255,255,255)
     BoxOutline.Thickness = 3
     BoxOutline.Transparency = 1
     BoxOutline.Filled = false
