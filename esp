@@ -8,7 +8,7 @@ local LegOff = Vector3.new(0,3,0)
 
 for i,v in pairs(game.Players:GetChildren()) do
     local BoxOutline = Drawing.new("Square")
-    BoxOutline.Visible = false
+    BoxOutline.Visible = true
     BoxOutline.Color = Color3.new(255,255,255)
     BoxOutline.Thickness = 3
     BoxOutline.Transparency = 1
@@ -32,7 +32,7 @@ for i,v in pairs(game.Players:GetChildren()) do
     HealthBar.Thickness = 1
     HealthBar.Filled = false
     HealthBar.Transparency = 1
-    HealthBar.Visible = false
+    HealthBar.Visible = true
 
     function boxesp()
         game:GetService("RunService").RenderStepped:Connect(function()
