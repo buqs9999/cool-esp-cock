@@ -1,16 +1,16 @@
---Settings--
+    --Settings--
 local ESP = {
     Enabled = true,
     Boxes = true,
     BoxShift = CFrame.new(0,-1.5,0),
 	BoxSize = Vector3.new(4,6,0),
-    Color = Color3.fromRGB(138,43,226),
-    FaceCamera = false,
+    Color = Color3.fromRGB(255,255,255),
+    FaceCamera = true,
     Names = true,
     TeamColor = true,
     Thickness = 2,
     AttachShift = 1,
-    TeamMates = false,
+    TeamMates = true,
     Players = true,
     
     Objects = setmetatable({}, {__mode="kv"}),
@@ -381,3 +381,4 @@ game:GetService("RunService").RenderStepped:Connect(function()
 end)
 
 return ESP
+end)
